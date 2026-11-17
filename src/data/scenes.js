@@ -1,0 +1,176 @@
+export const SCENES = [
+  {
+    id: 'entrada',
+    n: 'A entrada',
+    d: 'O primeiro vislumbre de uma estadia tranquila.',
+    i: 'entrance',
+    h: [
+      ['sala', 'Entrar na sala', 53, 56],
+      ['jardim', 'Explorar o exterior', 78, 70],
+      ['alpendre', 'Ver o alpendre coberto', 24, 62],
+    ],
+  },
+  {
+    id: 'sala',
+    n: 'Sala de estar',
+    d: 'Um espaço acolhedor para descansar e estar em família.',
+    i: 'livingRoom',
+    h: [
+      ['cozinha', 'Ir à cozinha', 75, 58],
+      ['quarto', 'Ver os quartos', 30, 66],
+      ['sala-ampla', 'Ver a sala e refeições', 68, 42],
+      ['entrada', 'Voltar à entrada', 48, 88, 'b'],
+    ],
+  },
+  {
+    id: 'cozinha',
+    n: 'Cozinha',
+    d: 'Um espaço preparado para os momentos à volta da mesa.',
+    i: 'kitchenCounter',
+    h: [
+      ['sala', 'Voltar à sala', 25, 70, 'b'],
+      ['piscina', 'Ver o exterior', 77, 78],
+      ['cozinha-refeicoes', 'Ver a cozinha e refeições', 68, 44],
+    ],
+  },
+  {
+    id: 'quarto',
+    n: 'Quarto principal',
+    d: 'Um recanto sereno para abrandar ao fim do dia.',
+    i: 'mainBedroom',
+    h: [
+      ['banho', 'Ir à casa de banho', 76, 63],
+      ['terraco', 'Sair para o terraço', 15, 50],
+      ['quarto-perspectiva', 'Ver outra perspetiva', 70, 42],
+      ['sala', 'Voltar à sala', 50, 90, 'b'],
+    ],
+  },
+  {
+    id: 'quarto-2',
+    n: 'Quarto adicional',
+    d: 'Mais um espaço acolhedor para receber quem vem consigo.',
+    i: 'secondBedroom',
+    h: [
+      ['quarto', 'Ver o quarto principal', 45, 80, 'b'],
+      ['sala', 'Voltar à sala', 78, 70, 'b'],
+      ['quarto-beliche', 'Ver o quarto com beliche', 26, 48],
+    ],
+  },
+  {
+    id: 'banho',
+    n: 'Casa de banho',
+    d: 'Conforto e simplicidade nos detalhes.',
+    i: 'bathroom',
+    h: [
+      ['quarto', 'Voltar ao quarto', 48, 88, 'b'],
+      ['banho-banheira', 'Ver a casa de banho com banheira', 76, 47],
+    ],
+  },
+  {
+    id: 'jardim',
+    n: 'Jardim',
+    d: 'Um convite a respirar fundo e aproveitar o ar livre.',
+    i: 'garden',
+    h: [
+      ['piscina', 'Ir até à piscina', 25, 56, 'b'],
+      ['entrada', 'Voltar à entrada', 35, 85, 'b'],
+      ['alpendre', 'Ver o alpendre coberto', 78, 51],
+    ],
+  },
+  {
+    id: 'piscina',
+    n: 'Piscina',
+    d: 'Um espaço exterior para aproveitar os dias de sol.',
+    i: 'pool',
+    h: [
+      ['jardim', 'Explorar o jardim', 12, 72, 'b'],
+      ['terraco', 'Ver o terraço', 75, 68],
+      ['descanso-piscina', 'Ver a zona de descanso', 43, 48],
+    ],
+  },
+  {
+    id: 'terraco',
+    n: 'Terraço',
+    d: 'Desfrute do exterior e da paisagem envolvente.',
+    i: 'terrace',
+    h: [
+      ['quarto', 'Voltar ao quarto', 24, 76, 'b'],
+      ['piscina', 'Ir até à piscina', 76, 74],
+      ['alpendre', 'Ver o alpendre coberto', 78, 44],
+    ],
+  },
+  {
+    id: 'sala-ampla',
+    n: 'Sala e refeições',
+    d: 'Uma vista ampla da sala e da zona de refeições.',
+    i: 'diningArea',
+    h: [
+      ['sala', 'Voltar à sala de estar', 22, 76, 'b'],
+      ['cozinha-refeicoes', 'Ver a cozinha e refeições', 78, 56],
+    ],
+  },
+  {
+    id: 'cozinha-refeicoes',
+    n: 'Cozinha e refeições',
+    d: 'A cozinha aberta para a mesa e os espaços partilhados.',
+    i: 'kitchenDining',
+    h: [
+      ['cozinha', 'Voltar à cozinha', 22, 75, 'b'],
+      ['sala-ampla', 'Ir para a sala e refeições', 78, 60],
+    ],
+  },
+  {
+    id: 'quarto-beliche',
+    n: 'Quarto com beliche',
+    d: 'Um quarto adicional com beliche para receber família e amigos.',
+    i: 'bunkBedroom',
+    h: [
+      ['quarto-2', 'Ver o quarto adicional', 22, 76, 'b'],
+      ['banho-suite', 'Ir à casa de banho da suite', 78, 55],
+    ],
+  },
+  {
+    id: 'banho-suite',
+    n: 'Casa de banho da suite',
+    d: 'Um espaço de banho ligado ao quarto com beliche.',
+    i: 'suiteBathroom',
+    h: [['quarto-beliche', 'Voltar ao quarto com beliche', 24, 76, 'b']],
+  },
+  {
+    id: 'descanso-piscina',
+    n: 'Zona de descanso',
+    d: 'Um espaço exterior para relaxar junto à piscina.',
+    i: 'poolLounge',
+    h: [
+      ['piscina', 'Voltar à piscina', 22, 76, 'b'],
+      ['jardim', 'Explorar o jardim', 78, 52],
+    ],
+  },
+  {
+    id: 'alpendre',
+    n: 'Alpendre coberto',
+    d: 'Uma zona exterior abrigada junto à casa.',
+    i: 'coveredPatio',
+    h: [
+      ['entrada', 'Voltar à entrada', 22, 76, 'b'],
+      ['piscina', 'Ir até à piscina', 78, 56],
+    ],
+  },
+  {
+    id: 'banho-banheira',
+    n: 'Casa de banho com banheira',
+    d: 'Uma casa de banho adicional com banheira.',
+    i: 'bathtubBathroom',
+    h: [],
+  },
+  {
+    id: 'quarto-perspectiva',
+    n: 'Quarto principal (outra perspetiva)',
+    d: 'Outra perspetiva do quarto principal, com arrumação e janela.',
+    i: 'mainBedroomView',
+    h: [
+      ['quarto', 'Voltar ao quarto principal', 22, 76, 'b'],
+      ['banho', 'Ir à casa de banho', 78, 58],
+    ],
+  },
+];
